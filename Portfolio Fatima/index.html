@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatima's Software Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <h1>Fatima's Portfolio</h1>
+            <div class="menu-toggle" id="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#languages">Languages</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="loader">Loading...</div>
+    <section id="about" class="section-bg" style="background-image: url('https://wallpapers.com/images/hd/pastel-blue-aesthetic-night-sky-mmfnk7gre9zo5tgq.jpg'); background-size: cover;">
+        <div class="container">
+            <div class="main-text-div">
+                <div class="intro-text" onmouseover="toggleText()" onmouseout="toggleText()">
+                    <p class="main-text">Hi, I'm Fatima!</p>
+                    <p class="hover-text">Aspiring Developer</p>
+                </div>
+                <div class="about-info-box fade-in">
+                    <p>Hi! Welcome to my website. I'm an upcoming software developer with a specialty of debugging. I enjoy coding mini-programs daily, and one of the things I practice often is CSS animations and Javascript! I used to be a English Language teacher but decided to change my career path to something related to technology, due to my vision of coding and AI being the future.</p>
+                </div>
+            </div>
+            <div class="image-container">
+                <div class="image">
+                    <img src="Fatima.jpeg" alt="Picture of Fatima">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="languages" class="section-bg">
+        <div class="container">
+            <div class="languages-header fade-in">
+                <h2 class="rainbow">Languages</h2>
+            </div>
+            <div class="skills-container">
+                <div class="skill-item fade-in">
+                    <img src="https://static-00.iconduck.com/assets.00/html-icon-1451x2048-69sehqrp.png" alt="HTML">
+                    <p>HTML</p>
+                </div>
+                <div class="skill-item fade-in">
+                    <img src="https://static-00.iconduck.com/assets.00/file-type-css-icon-1806x2048-r5fwjl3p.png" alt="CSS">
+                    <p>CSS</p>
+                </div>
+                <div class="skill-item fade-in">
+                    <img src="https://banner2.cleanpng.com/20180810/biz/kisspng-javascript-scalable-vector-graphics-logo-encapsula-javascript-le-ekran-grnts-almak-alpere-5b6dbeb48e4583.2854840415339189005828.jpg" alt="JavaScript">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-item fade-in">
+                    <img src="https://banner2.cleanpng.com/20190124/rs/kisspng-python-selenium-programming-language-computer-icon-pip-5c4a4a7ca92d33.171618491548372604693.jpg" alt="Python">
+                    <p>Python</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="section-bg">
+        <div class="container">
+            <h2 class="fade-in">Projects</h2>
+            <div class="projects-carousel fade-in">
+                <button class="arrow-left" onclick="previousProject()">&#8592;</button>
+                <div class="project-details">
+                    <a href="#" id="project-link" target="_blank">
+                        <img id="project-image" src="littlesprout1.png" alt="Project">
+                    </a>
+                    <div id="project-description" class="project-description">
+                        <p>Project 1: Little Sprout - An online shopping store for baby products primarily focused on neccessities.</p>
+                    </div>
+                </div>
+                <button class="arrow-right" onclick="nextProject()">&#8594;</button>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="section-bg">
+        <div class="container">
+            <h2 class="fade-in">Contact</h2>
+            <div class="contact-info fade-in">
+                <p>Feel free to reach out to me at <a href="mailto:f.bintmuhammed28@gmail.com">f.bintmuhammed28@gmail.com</a></p>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
